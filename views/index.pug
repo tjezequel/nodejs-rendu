@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css", integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO", crossorigin="anonymous")
+    title Acceuil
+  body
+    div.container.mt-5
+      h1 Musée de la fondation WDS
+      p Venez visiter nos collections virtuelles
+      ul
+        each collection in collections
+          li 
+            a(href="/collection/"+collection.id) #{collection.name}
+      p Partie Admin
+      ul 
+        li
+          a(href="/collections/form") Supprimer une collection
+        li 
+          a(href="/oeuvre/form") Ajouter une oeuvre

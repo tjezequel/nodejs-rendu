@@ -1,0 +1,9 @@
+{
+  "name": "devoir",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "sqlite3": "^4.0.2"
+  }
+}
